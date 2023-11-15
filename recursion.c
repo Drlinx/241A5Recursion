@@ -28,6 +28,9 @@ struct ternarytree {
 
 //Homework problems
 
+void print() {
+
+}
 
 /**
  * 
