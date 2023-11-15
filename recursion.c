@@ -11,6 +11,9 @@
 #include <string.h>
 #include <strings.h>
 
+// Declaration of true and false
+enum {False = 0, True = 1};
+
 // Declarations of data types
 struct binarytree {
     struct binarytree *left;
@@ -95,7 +98,12 @@ int dacarraysum(int *arr){
  * @brief inputs a sorted array and a number key and does a binary search 
  * returning a Boolean indicating the presence or absence of key in the array
  */
-int binarysearch(int *arr){
+int binarysearch(int *arr, int key){
+    int size = sizeof(arr) / 4;
+    if (size == 0){
+        return False;
+    }
+    int *prev[size - 1];  
     return 0;
 }
 
