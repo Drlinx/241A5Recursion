@@ -145,7 +145,22 @@ int Ternarytraverse(struct ternarytree *tt){
 }
 
 // Auxilary functions
+struct binarytree *createbt(int value, struct binarytree *l, struct binarytree *r){
+    struct binarytree *bt = malloc(sizeof(struct binarytree));
+    bt->left = l;
+    bt->right = r;
+    bt->value = value;
+    return bt;
+}
 
+struct ternarytree *createbt(int value, struct ternarytree *l, struct ternary *m, struct ternarytree *r){
+    struct ternarytree *bt = malloc(sizeof(struct ternarytree));
+    bt->left = l;
+    bt->middle = m;
+    bt->right = r;
+    bt->value = value;
+    return bt;
+}
 
 int main(){
 
