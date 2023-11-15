@@ -158,8 +158,5 @@ struct ternarytree *createbt(int value, struct ternarytree *l, struct ternary *m
 
 int main(){
 
-    printf("test");
-
-
     return 0;
 }
