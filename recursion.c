@@ -251,9 +251,33 @@ struct binarytree *genbt(){
     struct binarytree *l = createbt(1, NULL, NULL);
     struct binarytree *r = createbt(3, NULL, NULL);
     struct binarytree *m = createbt(2, l, r);
+
     l = m;
     r = NULL;
     m = createbt(4, l, r);
+    return m;
+}
+
+/**
+ * @brief Creates the following ternary tree
+ * 
+ *              7
+ *             /|\
+ *            5 4 6
+ *             /|\ \
+ *            1 2 3 9
+ * 
+ * @return struct ternarytree* 
+ */
+struct ternarytree *gentt(){
+    struct ternarytree *l = creatett(1, NULL, NULL, NULL);
+    struct ternarytree *r = creatett(3, NULL, NULL, NULL);
+    struct ternarytree *m = creatett(2, NULL, NULL, NULL);
+    struct ternarytree *h = creatett(4, l, m, r);
+    m = h;
+    l = creatett(5, NULL, NULL, NULL);
+    r = creatett(6, NULL, NULL, creatett(9, NULL, NULL, NULL));
+    h = creatett(7, l, m, r);
     return m;
 }
 
