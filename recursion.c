@@ -164,6 +164,5 @@ struct ternarytree *createbt(int value, struct ternarytree *l, struct ternary *m
 
 int main(){
     printf("Did it work?");
-    printf("helloworld");
     return 0;
 }
