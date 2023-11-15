@@ -144,7 +144,7 @@ int Ternarytraverse(struct ternarytree *tt){
 
 int main(){
 
-
+    printf("test");
 
 
     return 0;
