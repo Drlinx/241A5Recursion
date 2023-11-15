@@ -153,7 +153,7 @@ struct binarytree *createbt(int value, struct binarytree *l, struct binarytree *
     return bt;
 }
 
-struct ternarytree *createbt(int value, struct ternarytree *l, struct ternary *m, struct ternarytree *r){
+struct ternarytree *creatett(int value, struct ternarytree *l, struct ternary *m, struct ternarytree *r){
     struct ternarytree *bt = malloc(sizeof(struct ternarytree));
     bt->left = l;
     bt->middle = m;
