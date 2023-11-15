@@ -26,6 +26,11 @@ struct ternarytree {
     int value;
 } ;
 
+void testfunction()
+{
+    printf("Did it work?");
+}
+
 //Homework problems
 
 void printfunction()
